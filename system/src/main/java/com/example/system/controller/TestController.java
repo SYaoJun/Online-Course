@@ -1,7 +1,12 @@
 package com.example.system.controller;
 
+import com.example.system.domain.Info;
+import com.example.system.service.InfoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author yaojun
@@ -9,9 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class TestController {
+    @Autowired
+    private InfoService infoService;
 
-    @RequestMapping("/success")
-    public String test(){
-        return "success";
+    @RequestMapping("/test")
+    public List<Info> test(){
+        return infoService.getAllInfo();
     }
 }
