@@ -1,8 +1,7 @@
-package com.example.system.service;
+package com.example.server.service;
 
-import com.example.system.domain.Info;
-import com.example.system.mapper.InfoMapper;
-import com.netflix.discovery.converters.Auto;
+import com.example.server.domain.Info;
+import com.example.server.mapper.InfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

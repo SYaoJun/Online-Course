@@ -1,7 +1,7 @@
 package com.example.system.controller;
 
-import com.example.system.domain.Info;
-import com.example.system.service.InfoService;
+import com.example.server.domain.Info;
+import com.example.server.service.InfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

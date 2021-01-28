@@ -1,6 +1,6 @@
-package com.example.system.mapper;
+package com.example.server.mapper;
 
-import com.example.system.domain.Info;
+import com.example.server.domain.Info;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
