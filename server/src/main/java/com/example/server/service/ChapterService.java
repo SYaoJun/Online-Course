@@ -5,6 +5,7 @@ import com.example.server.domain.ChapterExample;
 import com.example.server.dto.ChapterDto;
 import com.example.server.mapper.ChapterMapper;
 import com.example.server.mapper.ChapterMapper;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,8 @@ public class ChapterService {
     private ChapterMapper chapterMapper;
 
     public List<ChapterDto> getAllInfo(){
+        /*从第二页开始，每页两条数据*/
+        PageHelper.startPage(2, 2);
         ChapterExample chapterExample = new ChapterExample();
 
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
