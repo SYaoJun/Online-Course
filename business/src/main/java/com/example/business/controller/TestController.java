@@ -1,4 +1,4 @@
-package com.example.system.controller;
+package com.example.business.controller;
 
 import com.example.server.domain.Info;
 import com.example.server.domain.User;

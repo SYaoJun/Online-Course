@@ -5,7 +5,7 @@
 <mapper namespace="com.example.server.mapper.InfoMapper">
     <!--查询数据-->
     <select id="getAllInfo" resultType="com.example.server.domain.Info">
-        select * from user;
+        select * from info;
     </select>
 
 </mapper>
